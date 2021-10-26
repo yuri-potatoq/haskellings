@@ -57,7 +57,7 @@ manhattanDistance xdist ydist = abs xdist + abs ydist
 -- Use `uncurry` and the manhattanDistance defined above.
 
 manhattanDistancePoint :: (Int, Int) -> Int
-manhattanDistancePoint = ???
+manhattanDistancePoint = uncurry manhattanDistance
 
 -- This function takes a pair of booleans and returns a boolean 
 -- corresponding to their logical AND

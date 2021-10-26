@@ -30,6 +30,7 @@ add5 x = x + 5
 -}
 
 eleven :: Int
+-- uncurry eleven :: (Int, Float) -> (Int, Bool)
 eleven = add5 6
 
 {-

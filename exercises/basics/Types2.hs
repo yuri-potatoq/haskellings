@@ -1,6 +1,6 @@
 module Types2 where
 
--- I AM NOT DONE
+-- I AM DONE
 
 {-
 - There are other basic types that aren't numeric!
@@ -23,11 +23,11 @@ string1 = "Foobar"
 
 -- TODO: Fill in either the values or type signatures.
 
-bool2 :: ???
+bool2 :: Bool
 bool2 = False
 
 char2 :: Char
-char2 = ???
+char2 = '@'
 
 helloWorld :: String
-helloWorld = ???
+helloWorld = ""

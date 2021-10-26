@@ -17,7 +17,7 @@ function x
   | otherwise           = {catch all case  :: OutputType}
 
 - Each case has its own line, starting with a vertical bar.
-- Then you'll list the condition (which should be a Bool expression).
+- Then you'll list the  condition (which should be a Bool expression).
 - The condition is followed by the "equals" sign, and then the return value for that case.
 - Instead of "else" for the catch-all case, use the keyword "otherwise".
 - Like the two branches of an If-Statement, all branches must have the same output type!
@@ -38,7 +38,9 @@ example list1
 
 -- Rewrite 'countTrue', except this it takes 3 inputs, so use guards!
 countTrue :: Bool -> Bool -> Bool -> Int
-countTrue = ???
+countTrue b1, b2, b3 = 
+  | b1 && b2 && b3 = 3
+  | b1 || b2 || b3 = 
 
 -- Return a string representation of the (positive) input number,
 -- from 0 = "Zero" up through 5 = "Five".

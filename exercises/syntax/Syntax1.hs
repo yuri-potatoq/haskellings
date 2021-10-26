@@ -39,10 +39,14 @@ multiplicationFunc x = if mod x 3 == 0
 -- TODO: Fill in these functions!
 -- Of the two inputs, return how many are "True"
 countTrue :: Bool -> Bool -> Int
-countTrue b1 b2 = ???
+countTrue b1 b2 = if b1 && b2
+  then 2
+  else if b1 || b2
+    then 1
+    else 0
 
 -- What is the type signature of this function?
-evalInput :: ???
+evalInput :: Int -> [Int] -> Float
 evalInput x myList = if x == 0
   then 1.0
   else if head myList == 0
